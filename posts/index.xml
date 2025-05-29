@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on CyberSecrets</title>
+    <link>/posts/</link>
+    <description>Recent content in Posts on CyberSecrets</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 29 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Weaponizing RDP</title>
+      <link>/posts/weaponizing-rdp/</link>
+      <pubDate>Thu, 29 May 2025 00:00:00 +0000</pubDate>
+      <guid>/posts/weaponizing-rdp/</guid>
+      <description>&lt;h1 id=&#34;-weaponizing-rdp-files-for-initial-access--a-red-team-technique&#34;&gt;🖥️ Weaponizing RDP Files for Initial Access – A Red Team Technique&lt;/h1&gt;&#xA;&lt;p&gt;&lt;em&gt;Disclaimer: This post is for educational and ethical red teaming purposes only.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Remote Desktop Protocol (.RDP) files are often considered benign by end users and IT admins alike. But under the right circumstances, they can be weaponized to deliver payloads — an advanced technique often explored in controlled penetration testing environments.&lt;/p&gt;&#xA;&lt;p&gt;In this post, we walk through the essentials of RDP file weaponization and automation using Task Scheduler and PowerShell.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My OSCP Journey</title>
+      <link>/posts/my-oscp-journey/</link>
+      <pubDate>Sat, 28 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>/posts/my-oscp-journey/</guid>
+      <description>&lt;h2 id=&#34;what-is-oscp&#34;&gt;What is OSCP&lt;/h2&gt;&#xA;&lt;p&gt;The Offensive Security Certified Professional (OSCP) is a highly regarded certification in the field of cybersecurity, offered by Offensive Security. It is designed to test a candidate’s ability to think critically and apply practical penetration testing skills in real-world scenarios. The OSCP certification is especially valued among cybersecurity professionals, as it demonstrates hands-on expertise in ethical hacking and penetration testing.&lt;/p&gt;&#xA;&lt;h3 id=&#34;key-highlights-of-oscp&#34;&gt;Key Highlights of OSCP:&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Practical Focus:&lt;/strong&gt; Unlike many theoretical certifications, OSCP emphasizes hands-on skills. It’s not just about knowing the concepts; it’s about applying them effectively.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

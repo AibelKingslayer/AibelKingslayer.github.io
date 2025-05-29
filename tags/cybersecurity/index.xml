@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cybersecurity on CyberSecrets</title>
+    <link>/tags/cybersecurity/</link>
+    <description>Recent content in Cybersecurity on CyberSecrets</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 28 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/cybersecurity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My OSCP Journey</title>
+      <link>/posts/my-oscp-journey/</link>
+      <pubDate>Sat, 28 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>/posts/my-oscp-journey/</guid>
+      <description>&lt;h2 id=&#34;what-is-oscp&#34;&gt;What is OSCP&lt;/h2&gt;&#xA;&lt;p&gt;The Offensive Security Certified Professional (OSCP) is a highly regarded certification in the field of cybersecurity, offered by Offensive Security. It is designed to test a candidate’s ability to think critically and apply practical penetration testing skills in real-world scenarios. The OSCP certification is especially valued among cybersecurity professionals, as it demonstrates hands-on expertise in ethical hacking and penetration testing.&lt;/p&gt;&#xA;&lt;h3 id=&#34;key-highlights-of-oscp&#34;&gt;Key Highlights of OSCP:&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Practical Focus:&lt;/strong&gt; Unlike many theoretical certifications, OSCP emphasizes hands-on skills. It’s not just about knowing the concepts; it’s about applying them effectively.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -141,7 +141,7 @@ Traditional enterprise SIEMs (like Splunk, QRadar, or Microsoft Sentinel) are po
   <h1 class="post-title">
     <a href="/posts/siem/">Building a Lightweight Python SIEM with Discord Notifications</a>
   </h1>
-  <div class="post-meta"><time class="post-date">2025-05-31</time></div>
+  <div class="post-meta"><time class="post-date">2025-05-31</time><span class="post-author">Aibel Jaic Aju</span></div>
 
   
     <span class="post-tags">
@@ -186,10 +186,10 @@ Traditional enterprise SIEMs (like Splunk, QRadar, or Microsoft Sentinel) are po
 <p>📦 Application installations</p>
 <p>🔌 USB device insertions</p>
 <p>All critical events are parsed from the Windows Event Logs and pushed to a Discord channel using a webhook, so you can get real-time alerts without setting up a full SIEM stack.</p>
-<p>🛠️ Technical Overview
-The tool leverages Python&rsquo;s capabilities to interact with Windows Event Logs, utilizing modules such as pywin32 for event log access and requests for sending HTTP POST requests to Discord webhooks. By parsing relevant event IDs, the tool identifies specific security-related activities and formats them into readable messages for Discord.</p>
-<p>🔍 Features
-The SIEM tool focuses on detecting and alerting the following events:</p>
+<p>🛠️ Technical Overview</p>
+<p>The tool leverages Python&rsquo;s capabilities to interact with Windows Event Logs, utilizing modules such as pywin32 for event log access and requests for sending HTTP POST requests to Discord webhooks. By parsing relevant event IDs, the tool identifies specific security-related activities and formats them into readable messages for Discord.</p>
+<p>🔍 Features</p>
+<p>The SIEM tool focuses on detecting and alerting the following events:</p>
 <ul>
 <li>User Account Creation: Identifies when new user accounts are added.</li>
 <li>Password Change Attempts: Monitors both successful and failed password change endeavors.</li>
@@ -247,8 +247,8 @@ The SIEM tool focuses on detecting and alerting the following events:</p>
 <li>Source of the event</li>
 </ul>
 <p>Extracted details (e.g., account name, application, USB device)</p>
-<p>🚀 Getting Started
-To deploy the SIEM tool:</p>
+<p>🚀 Getting Started</p>
+<p>To deploy the SIEM tool:</p>
 <ol>
 <li>
 <p>Set Up Discord Webhook: Create a webhook in your desired Discord channel to receive alerts.</p>

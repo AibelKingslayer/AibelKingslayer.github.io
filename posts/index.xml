@@ -6,8 +6,15 @@
     <description>Recent content in Posts on CyberSecrets</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 29 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building a Lightweight Python SIEM with Discord Notifications</title>
+      <link>/posts/siem/</link>
+      <pubDate>Sat, 31 May 2025 00:00:00 +0000</pubDate>
+      <guid>/posts/siem/</guid>
+      <description>&lt;p&gt;🧠 What is SIEM?&lt;/p&gt;&#xA;&lt;p&gt;SIEM stands for Security Information and Event Management. It is a system that collects, analyzes, and correlates security event data from various sources — like operating systems, applications, and network devices — in real time.&lt;/p&gt;&#xA;&lt;p&gt;A SIEM helps:&lt;/p&gt;&#xA;&lt;p&gt;🔍 Detect suspicious activity and threats&lt;/p&gt;&#xA;&lt;p&gt;🧾 Maintain audit trails for compliance&lt;/p&gt;&#xA;&lt;p&gt;🚨 Alert security teams about incidents&lt;/p&gt;&#xA;&lt;p&gt;📊 Visualize security trends across systems&lt;/p&gt;&#xA;&lt;p&gt;Traditional enterprise SIEMs (like Splunk, QRadar, or Microsoft Sentinel) are powerful but often complex and expensive.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Weaponizing RDP</title>
       <link>/posts/weaponizing-rdp/</link>

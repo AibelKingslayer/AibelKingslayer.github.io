@@ -1,109 +1,110 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on CyberSecrets</title>
-    <link>/tags/</link>
-    <description>Recent content in Tags on CyberSecrets</description>
+    <title>Tags on Cyber Secrets</title>
+    <link>https://aibelkingslayer.github.io/tags/</link>
+    <description>Recent content in Tags on Cyber Secrets</description>
     <generator>Hugo</generator>
     <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sat, 31 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aibelkingslayer.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Automation</title>
-      <link>/tags/automation/</link>
+      <link>https://aibelkingslayer.github.io/tags/automation/</link>
       <pubDate>Sat, 31 May 2025 00:00:00 +0000</pubDate>
-      <guid>/tags/automation/</guid>
+      <guid>https://aibelkingslayer.github.io/tags/automation/</guid>
       <description></description>
     </item>
     <item>
       <title>Cybersecurity</title>
-      <link>/tags/cybersecurity/</link>
+      <link>https://aibelkingslayer.github.io/tags/cybersecurity/</link>
       <pubDate>Sat, 31 May 2025 00:00:00 +0000</pubDate>
-      <guid>/tags/cybersecurity/</guid>
+      <guid>https://aibelkingslayer.github.io/tags/cybersecurity/</guid>
       <description></description>
     </item>
     <item>
       <title>Discord</title>
-      <link>/tags/discord/</link>
+      <link>https://aibelkingslayer.github.io/tags/discord/</link>
       <pubDate>Sat, 31 May 2025 00:00:00 +0000</pubDate>
-      <guid>/tags/discord/</guid>
+      <guid>https://aibelkingslayer.github.io/tags/discord/</guid>
       <description></description>
     </item>
     <item>
       <title>Logs</title>
-      <link>/tags/logs/</link>
+      <link>https://aibelkingslayer.github.io/tags/logs/</link>
       <pubDate>Sat, 31 May 2025 00:00:00 +0000</pubDate>
-      <guid>/tags/logs/</guid>
+      <guid>https://aibelkingslayer.github.io/tags/logs/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>/tags/python/</link>
+      <link>https://aibelkingslayer.github.io/tags/python/</link>
       <pubDate>Sat, 31 May 2025 00:00:00 +0000</pubDate>
-      <guid>/tags/python/</guid>
+      <guid>https://aibelkingslayer.github.io/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>Security</title>
-      <link>/tags/security/</link>
+      <link>https://aibelkingslayer.github.io/tags/security/</link>
       <pubDate>Sat, 31 May 2025 00:00:00 +0000</pubDate>
-      <guid>/tags/security/</guid>
+      <guid>https://aibelkingslayer.github.io/tags/security/</guid>
       <description></description>
     </item>
     <item>
       <title>SIEM</title>
-      <link>/tags/siem/</link>
+      <link>https://aibelkingslayer.github.io/tags/siem/</link>
       <pubDate>Sat, 31 May 2025 00:00:00 +0000</pubDate>
-      <guid>/tags/siem/</guid>
+      <guid>https://aibelkingslayer.github.io/tags/siem/</guid>
       <description></description>
     </item>
     <item>
       <title>Windows</title>
-      <link>/tags/windows/</link>
+      <link>https://aibelkingslayer.github.io/tags/windows/</link>
       <pubDate>Sat, 31 May 2025 00:00:00 +0000</pubDate>
-      <guid>/tags/windows/</guid>
+      <guid>https://aibelkingslayer.github.io/tags/windows/</guid>
       <description></description>
     </item>
     <item>
       <title>Blog</title>
-      <link>/tags/blog/</link>
+      <link>https://aibelkingslayer.github.io/tags/blog/</link>
       <pubDate>Thu, 29 May 2025 00:00:00 +0000</pubDate>
-      <guid>/tags/blog/</guid>
+      <guid>https://aibelkingslayer.github.io/tags/blog/</guid>
       <description></description>
     </item>
     <item>
       <title>Offensive Security</title>
-      <link>/tags/offensive-security/</link>
+      <link>https://aibelkingslayer.github.io/tags/offensive-security/</link>
       <pubDate>Thu, 29 May 2025 00:00:00 +0000</pubDate>
-      <guid>/tags/offensive-security/</guid>
+      <guid>https://aibelkingslayer.github.io/tags/offensive-security/</guid>
       <description></description>
     </item>
     <item>
       <title>Pentesting</title>
-      <link>/tags/pentesting/</link>
+      <link>https://aibelkingslayer.github.io/tags/pentesting/</link>
       <pubDate>Thu, 29 May 2025 00:00:00 +0000</pubDate>
-      <guid>/tags/pentesting/</guid>
+      <guid>https://aibelkingslayer.github.io/tags/pentesting/</guid>
       <description></description>
     </item>
     <item>
       <title>Redteam</title>
-      <link>/tags/redteam/</link>
+      <link>https://aibelkingslayer.github.io/tags/redteam/</link>
       <pubDate>Thu, 29 May 2025 00:00:00 +0000</pubDate>
-      <guid>/tags/redteam/</guid>
+      <guid>https://aibelkingslayer.github.io/tags/redteam/</guid>
       <description></description>
     </item>
     <item>
       <title>Certifications</title>
-      <link>/tags/certifications/</link>
+      <link>https://aibelkingslayer.github.io/tags/certifications/</link>
       <pubDate>Sat, 28 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>/tags/certifications/</guid>
+      <guid>https://aibelkingslayer.github.io/tags/certifications/</guid>
       <description></description>
     </item>
     <item>
       <title>Oscp</title>
-      <link>/tags/oscp/</link>
+      <link>https://aibelkingslayer.github.io/tags/oscp/</link>
       <pubDate>Sat, 28 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>/tags/oscp/</guid>
+      <guid>https://aibelkingslayer.github.io/tags/oscp/</guid>
       <description></description>
     </item>
   </channel>

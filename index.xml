@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 31 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://aibelkingslayer.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automate Your Windows Laptop with Flask and Tailscale</title>
+      <link>https://aibelkingslayer.github.io/posts/automate-pc-tasks/</link>
+      <pubDate>Fri, 06 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://aibelkingslayer.github.io/posts/automate-pc-tasks/</guid>
+      <description>&lt;h2 id=&#34;-what-youll-build&#34;&gt;🔐 What You&amp;rsquo;ll Build&lt;/h2&gt;&#xA;&lt;p&gt;You&amp;rsquo;ll set up:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;A &lt;strong&gt;Flask API server&lt;/strong&gt; on your laptop with authentication&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Endpoints to:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;🔒 Lock the screen&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;🔄 Restart or Shutdown&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;📦 Update apps silently via &lt;code&gt;winget&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;🧹 Clear Temp files&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;📺 Open websites like YouTube&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Access the server securely from anywhere using &lt;strong&gt;Tailscale IP&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;-requirements&#34;&gt;📦 Requirements&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Windows laptop&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://tailscale.com/&#34;&gt;Tailscale&lt;/a&gt; installed and running&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Python 3.x with Flask: &lt;code&gt;pip install flask&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Android app: &lt;a href=&#34;https://play.google.com/store/apps/details?id=ch.rmy.android.http_shortcuts&#34;&gt;HTTP Shortcuts&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;-flask-script&#34;&gt;🚀 Flask Script&lt;/h2&gt;&#xA;&lt;p&gt;Here&amp;rsquo;s the full code to serve the remote control endpoints:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Building a Lightweight Python SIEM with Discord Notifications</title>
       <link>https://aibelkingslayer.github.io/posts/siem/</link>

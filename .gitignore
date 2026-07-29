@@ -1,3 +1,11 @@
 public/
+resources/
 resources/_gen/
 .hugo_build.lock
+
+# Node / Vite / Tailwind build
+node_modules/
+.vite/
+
+# Vite-built CSS (generated at build time by `vite build`)
+static/css/

@@ -1,0 +1,107 @@
+baseURL: 'https://aibelkingslayer.github.io/'
+title: Security Slayer
+locale: en-us
+DefaultContentLanguage: en
+enableEmoji: true
+enableGitInfo: false
+enableRobotsTXT: true
+canonifyURLs: false
+pagination:
+  pagerSize: 9
+enableInlineShortcodes: true
+
+markup:
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      linkifyProtocol: https
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer:
+        apostrophe: '&rsquo;'
+        disable: false
+        ellipsis: '&hellip;'
+        emDash: '&mdash;'
+        enDash: '&ndash;'
+    parser:
+      attribute:
+        block: false
+        title: true
+      autoHeadingID: true
+      autoHeadingIDType: github
+      wrapStandAloneImageWithinParagraph: true
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xhtml: false
+
+params:
+  author: Aibel
+  moto: "Breaking things, legally."
+  description: "Cybersecurity, penetration testing, and CTF writeups by Aibel. OSCP certified offensive security specialist."
+  disable_theme_toggle: false
+  newsletter_signup: false
+
+  social_media:
+    github:
+      enabled: true
+      url: 'https://github.com/AibelKingslayer'
+    email:
+      enabled: true
+      url: 'mailto:aibelarci@gmail.com'
+    facebook:
+      enabled: false
+    instagram:
+      enabled: false
+    twitter:
+      enabled: false
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 30
+  footer:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 30
+
+taxonomies:
+  category: Categories
+  tag: Tags
+
+imaging:
+  quality: 85
+  resampleFilter: lanczos
+  anchor: smart
+
+module:
+  hugoVersion:
+    extended: true
+    min: "0.158.0"
+
+caches:
+  images:
+    dir: ":cacheDir/images"
+    maxAge: "8760h"

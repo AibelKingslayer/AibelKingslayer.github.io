@@ -2,8 +2,8 @@
 title: "About"
 date: 2025-08-12
 author: "Aibel"
-layout: "about"
 url: "/about/"
+showTableOfContents: false
 summary: "About Aibel — cybersecurity professional, OSCP certified, penetration tester."
 ---
 

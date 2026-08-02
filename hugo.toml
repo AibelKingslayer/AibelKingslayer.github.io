@@ -1,0 +1,101 @@
+baseURL = "https://aibelkingslayer.github.io/"
+title = "Security Slayer"
+languageCode = "en-us"
+theme = "hello-friend-ng"
+
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
+
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableEmoji = true
+disableRSS = false
+disableSitemap = false
+
+[pagination]
+  pagerSize = 10
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  series = "series"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  description = "Cybersecurity, penetration testing, and CTF writeups by Aibel. OSCP certified offensive security specialist."
+  keywords = "cybersecurity, penetration testing, OSCP, red team, CTF, offensive security"
+  images = [""]
+
+  homeSubtitle = "Offensive security · penetration testing · CTF writeups. OSCP certified."
+
+  disableReadOtherPosts = false
+
+  # Show the light/dark toggle (site defaults to dark via extra-head.html).
+  enableThemeToggle = true
+
+  enableSharingButtons = false
+  enableReadingTime = true
+  enableGlobalLanguageMenu = false
+
+  themeColor = "#1b1c1d"
+
+  customCSS = []
+  customJS  = []
+
+  [params.author]
+    name = "Aibel"
+
+  [params.footer]
+    trademark = 2025
+    rss = true
+    copyright = true
+    author = true
+    topText = []
+    bottomText = [
+      "Powered by <a href=\"https://gohugo.io\">Hugo</a> & <a href=\"https://github.com/rhazdon/hugo-theme-hello-friend-ng\">hello-friend-ng</a>"
+    ]
+
+  [params.favicon.color]
+    mask = "#1b1c1d"
+    msapplication = "#1b1c1d"
+    theme = "#1b1c1d"
+
+  [params.logo]
+    logoMark     = ">"
+    logoText     = "cd /security-slayer"
+    logoHomeLink = "/"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/AibelKingslayer"
+
+  [[params.social]]
+    name = "email"
+    url  = "mailto:aibelarci@gmail.com"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name       = "Posts"
+    url        = "posts/"
+    weight     = 10
+
+  [[menu.main]]
+    identifier = "tags"
+    name       = "Tags"
+    url        = "tags/"
+    weight     = 20
+
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "about/"
+    weight     = 30

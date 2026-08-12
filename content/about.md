@@ -45,9 +45,6 @@ This is where I document my journey — writeups, techniques I've learned, tools
 
 ## Get in Touch
 
-I'm always open to talking security, comparing notes, or collaborating on research. You can find me at:
-
-- **Email:** aibelarci@gmail.com
-- **GitHub:** [AibelKingslayer](https://github.com/AibelKingslayer)
+I'm always open to talking security, comparing notes, or collaborating on research. You can find me on [GitHub](https://github.com/AibelKingslayer).
 
 > *"Try harder."* — and mean it.

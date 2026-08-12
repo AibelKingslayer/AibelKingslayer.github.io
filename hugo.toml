@@ -59,7 +59,7 @@ disableSitemap = false
     copyright = true
     author = true
     topText = []
-    bottomText = ["Built with Hugo // secured by curiosity"]
+    bottomText = []
 
   [params.favicon.color]
     mask = "#1b1c1d"

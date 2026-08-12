@@ -76,8 +76,8 @@ disableSitemap = false
     url  = "https://github.com/AibelKingslayer"
 
   [[params.social]]
-    name = "email"
-    url  = "mailto:aibelarci@gmail.com"
+    name = "linkedin"
+    url  = "https://linkedin.com/in/aibel-aju"
 
 [menu]
   [[menu.main]]

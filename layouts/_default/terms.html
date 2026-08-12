@@ -1,0 +1,24 @@
+{{ define "main" }}
+<div class="content taxonomy-shell">
+  <main>
+    <header class="taxonomy-hero reveal">
+      <p class="kicker">// INTELLIGENCE INDEX</p>
+      <div class="taxonomy-hero__title">
+        <div><p class="taxonomy-prompt">root@security-slayer:~$ ls ./tags</p><h1>Explore by <span>signal.</span></h1></div>
+        <div class="taxonomy-count"><b>{{ len .Data.Terms }}</b><span>ACTIVE TAGS</span></div>
+      </div>
+      <p class="taxonomy-intro">Filter the field notes by technique, platform, or discipline. Every tag is another path through the knowledge base.</p>
+    </header>
+
+    <section class="tag-grid reveal" aria-label="All tags">
+      {{ range .Data.Terms.ByCount }}
+      <a class="tag-node" href="{{ .Page.RelPermalink }}">
+        <span class="tag-node__hash">#</span>
+        <div><strong>{{ .Page.Title }}</strong><small>{{ .Count }} {{ if eq .Count 1 }}ENTRY{{ else }}ENTRIES{{ end }}</small></div>
+        <span class="tag-node__arrow">↗</span>
+      </a>
+      {{ end }}
+    </section>
+  </main>
+</div>
+{{ end }}

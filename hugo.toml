@@ -51,10 +51,10 @@ disableSitemap = false
   customJS  = ["/js/hacker.js"]
 
   [params.author]
-    name = "Aibel"
+    name = "Security Slayer"
 
   [params.footer]
-    trademark = 2025
+    trademark = 2026
     rss = true
     copyright = true
     author = true

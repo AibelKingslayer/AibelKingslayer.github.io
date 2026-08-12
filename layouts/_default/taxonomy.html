@@ -1,0 +1,26 @@
+{{ define "main" }}
+<div class="content taxonomy-shell">
+  <main>
+    <header class="term-hero reveal">
+      <a class="term-back" href="{{ "tags/" | relURL }}">← cd ../tags</a>
+      <p class="kicker">// FILTERED INTELLIGENCE</p>
+      <h1><span>#</span>{{ .Title }}</h1>
+      <p>{{ len .Pages }} {{ if eq (len .Pages) 1 }}dispatch{{ else }}dispatches{{ end }} matched this signal.</p>
+    </header>
+    <section class="term-results reveal" aria-label="Posts tagged {{ .Title }}">
+      {{ range $index, $page := .Pages.ByDate.Reverse }}
+      <article class="term-result">
+        <a class="term-result__link" href="{{ $page.RelPermalink }}" aria-label="Read {{ $page.Title }}"></a>
+        <div class="term-result__index">{{ printf "%02d" (add $index 1) }}</div>
+        <div class="term-result__body">
+          <div class="term-result__meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006.01.02" }}</time><span>{{ .ReadingTime }} MIN READ</span></div>
+          <h2>{{ .Title }}</h2>
+          <p>{{ with .Description }}{{ . | truncate 180 }}{{ else }}{{ .Summary | plainify | truncate 180 }}{{ end }}</p>
+        </div>
+        <span class="term-result__arrow">↗</span>
+      </article>
+      {{ end }}
+    </section>
+  </main>
+</div>
+{{ end }}

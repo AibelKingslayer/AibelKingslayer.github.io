@@ -39,16 +39,16 @@ disableSitemap = false
   disableReadOtherPosts = false
 
   # Show the light/dark toggle (site defaults to dark via extra-head.html).
-  enableThemeToggle = true
+  enableThemeToggle = false
 
   enableSharingButtons = false
   enableReadingTime = true
   enableGlobalLanguageMenu = false
 
-  themeColor = "#1b1c1d"
+  themeColor = "#070b09"
 
-  customCSS = []
-  customJS  = []
+  customCSS = ["/css/hacker.css"]
+  customJS  = ["/js/hacker.js"]
 
   [params.author]
     name = "Aibel"
@@ -59,9 +59,7 @@ disableSitemap = false
     copyright = true
     author = true
     topText = []
-    bottomText = [
-      "Powered by <a href=\"https://gohugo.io\">Hugo</a> & <a href=\"https://github.com/rhazdon/hugo-theme-hello-friend-ng\">hello-friend-ng</a>"
-    ]
+    bottomText = ["Built with Hugo // secured by curiosity"]
 
   [params.favicon.color]
     mask = "#1b1c1d"

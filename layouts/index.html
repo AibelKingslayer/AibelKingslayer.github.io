@@ -1,0 +1,57 @@
+{{ define "main" }}
+<main class="home-shell">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__copy reveal">
+      <div class="eyebrow"><span class="status-dot"></span> SYSTEM ONLINE <span class="eyebrow__line"></span> INDIA / UTC+5:30</div>
+      <p class="hero__prompt">root@security-slayer:~$ <span data-typewriter="whoami">whoami</span><span class="cursor">_</span></p>
+      <h1 id="hero-title">I break systems.<br><span>I document why.</span></h1>
+      <p class="hero__intro">Offensive security field notes, penetration testing methodology, and honest lessons from the other side of the shell.</p>
+      <div class="hero__actions">
+        <a class="button button--primary" href="{{ "posts/" | relURL }}"><span>./explore_writeups</span><b aria-hidden="true">↗</b></a>
+        <a class="button button--ghost" href="{{ "about/" | relURL }}">cat about.md</a>
+      </div>
+    </div>
+    <div class="terminal reveal" aria-label="Terminal profile summary">
+      <div class="terminal__bar"><div><i></i><i></i><i></i></div><span>~/profile — zsh</span><span>⌁</span></div>
+      <div class="terminal__body">
+        <p><em>❯</em> nmap -sV aibel.local</p>
+        <p class="muted">Starting Nmap 7.94...</p>
+        <div class="terminal__rule"></div>
+        <p><strong>PORT&nbsp;&nbsp;&nbsp;&nbsp;STATE&nbsp;&nbsp;SERVICE</strong></p>
+        <p><b>22/tcp</b>&nbsp;&nbsp; open&nbsp;&nbsp; <span>curiosity</span></p>
+        <p><b>80/tcp</b>&nbsp;&nbsp; open&nbsp;&nbsp; <span>research</span></p>
+        <p><b>443/tcp</b>&nbsp; open&nbsp;&nbsp; <span>offsec</span></p>
+        <div class="terminal__rule"></div>
+        <p class="muted">3 services exposed. No fear detected.</p>
+        <p><em>❯</em> <span class="cursor">█</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="dispatches reveal" aria-labelledby="dispatch-title">
+    <div class="section-heading">
+      <div><p class="kicker">// LATEST INTELLIGENCE</p><h2 id="dispatch-title">Recent dispatches</h2></div>
+      <a href="{{ "posts/" | relURL }}">VIEW ALL <span>→</span></a>
+    </div>
+    <div class="post-grid">
+      {{ range first 3 (where .Site.RegularPages "Section" "posts") }}
+      <article class="post-card">
+        <a class="post-card__link" href="{{ .RelPermalink }}" aria-label="Read {{ .Title }}"></a>
+        <div class="post-card__meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006.01.02" }}</time><span>{{ .ReadingTime }} MIN READ</span></div>
+        <h3>{{ .Title }}</h3>
+        <p>{{ with .Description }}{{ . | truncate 145 }}{{ else }}{{ .Summary | plainify | truncate 145 }}{{ end }}</p>
+        <div class="post-card__footer">
+          <div>{{ range first 2 .Params.tags }}<span>#{{ . }}</span>{{ end }}</div><b>↗</b>
+        </div>
+      </article>
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="manifesto reveal">
+    <p class="kicker">// OPERATING PRINCIPLES</p>
+    <blockquote>“Enumeration is not a phase.<br>It is a <span>mindset.</span>”</blockquote>
+    <div class="manifesto__stats"><div><b>OSCP+</b><span>CERTIFIED</span></div><div><b>∞</b><span>ATTACK SURFACE</span></div><div><b>24/7</b><span>LEARNING MODE</span></div></div>
+  </section>
+</main>
+{{ end }}

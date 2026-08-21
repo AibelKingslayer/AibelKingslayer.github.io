@@ -1,99 +1,87 @@
 baseURL = "https://aibelkingslayer.github.io/"
 title = "Security Slayer"
-languageCode = "en-us"
-theme = "hello-friend-ng"
-
-PygmentsCodeFences = true
-PygmentsStyle = "monokai"
-
-buildDrafts = false
-buildFuture = false
-buildExpired = false
-canonifyURLs = true
-
+theme = "mana"
+defaultContentLanguage = "en"
 enableRobotsTXT = true
 enableEmoji = true
-disableRSS = false
-disableSitemap = false
 
 [pagination]
-  pagerSize = 10
+  pageSize = 10
 
 [taxonomies]
   tag = "tags"
   category = "categories"
   series = "series"
 
+[markup]
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 6
+    ordered = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    noClasses = false
+    style = "catppuccin-macchiato"
+
+[outputs]
+  home = ["HTML", "JSON"]
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
 [params]
-  dateform        = "Jan 2, 2006"
-  dateformShort   = "Jan 2"
-  dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04"
-
+  enableIntegrity = false
+  relatedPostsCount = 3
   description = "Cybersecurity, penetration testing, and CTF writeups by Aibel. OSCP certified offensive security specialist."
-  keywords = "cybersecurity, penetration testing, OSCP, red team, CTF, offensive security"
-  images = [""]
+  author = "Aibel"
+  heroTitleLine1 = "SECURITY"
+  heroTitleLine2 = "SLAYER"
+  footerText = "Offensive security, penetration testing, and field notes."
 
-  homeSubtitle = "Offensive security · penetration testing · CTF writeups. OSCP certified."
+  [params.social]
+    github = "https://github.com/AibelKingslayer"
+    linkedin = "https://linkedin.com/in/aibel-aju"
 
-  disableReadOtherPosts = false
+  [params.buyMeACoffee]
+    enabled = false
 
-  # Show the light/dark toggle (site defaults to dark via extra-head.html).
-  enableThemeToggle = false
+  [params.codeHighlight]
+    darkTheme = "catppuccin-macchiato"
+    lightTheme = "catppuccin-frappe"
 
-  enableSharingButtons = false
-  enableReadingTime = true
-  enableGlobalLanguageMenu = false
+  [params.copyright]
+    startYear = 2025
+    owner = "Aibel"
 
-  themeColor = "#0b0b12"
+  [params.admonitions]
+    alertStyle = "favicon"
 
-  customCSS = ["/css/hacker.css"]
-  customJS  = ["/js/hacker.js"]
+[[menus.main]]
+  name = "Home"
+  pageRef = "/"
+  weight = 10
 
-  [params.author]
-    name = "Security Slayer"
+[[menus.main]]
+  name = "Posts"
+  pageRef = "/posts"
+  weight = 20
 
-  [params.footer]
-    trademark = 2026
-    rss = true
-    copyright = true
-    author = true
-    topText = []
-    bottomText = []
+[[menus.main]]
+  name = "Tags"
+  pageRef = "/tags"
+  weight = 30
 
-  [params.favicon.color]
-    mask = "#9c7cff"
-    msapplication = "#0b0b12"
-    theme = "#0b0b12"
-
-  [params.logo]
-    logoMark     = "✦"
-    logoText     = "SECURITY SLAYER"
-    logoHomeLink = "/"
-
-  [[params.social]]
-    name = "github"
-    url  = "https://github.com/AibelKingslayer"
-
-  [[params.social]]
-    name = "linkedin"
-    url  = "https://linkedin.com/in/aibel-aju"
-
-[menu]
-  [[menu.main]]
-    identifier = "posts"
-    name       = "Posts"
-    url        = "posts/"
-    weight     = 10
-
-  [[menu.main]]
-    identifier = "tags"
-    name       = "Tags"
-    url        = "tags/"
-    weight     = 20
-
-  [[menu.main]]
-    identifier = "about"
-    name       = "About"
-    url        = "about/"
-    weight     = 30
+[[menus.main]]
+  name = "About"
+  url = "/about/"
+  weight = 40

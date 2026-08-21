@@ -45,7 +45,7 @@ disableSitemap = false
   enableReadingTime = true
   enableGlobalLanguageMenu = false
 
-  themeColor = "#070b09"
+  themeColor = "#0b0b12"
 
   customCSS = ["/css/hacker.css"]
   customJS  = ["/js/hacker.js"]
@@ -62,13 +62,13 @@ disableSitemap = false
     bottomText = []
 
   [params.favicon.color]
-    mask = "#1b1c1d"
-    msapplication = "#1b1c1d"
-    theme = "#1b1c1d"
+    mask = "#9c7cff"
+    msapplication = "#0b0b12"
+    theme = "#0b0b12"
 
   [params.logo]
-    logoMark     = ">"
-    logoText     = "cd /security-slayer"
+    logoMark     = "✦"
+    logoText     = "SECURITY SLAYER"
     logoHomeLink = "/"
 
   [[params.social]]

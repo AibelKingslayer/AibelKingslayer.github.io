@@ -2,36 +2,30 @@
 <main class="home-shell">
   <section class="hero" aria-labelledby="hero-title">
     <div class="hero__copy reveal">
-      <div class="eyebrow"><span class="status-dot"></span> SYSTEM ONLINE <span class="eyebrow__line"></span> INDIA / UTC+5:30</div>
-      <p class="hero__prompt">root@security-slayer:~$ <span data-typewriter="whoami">whoami</span><span class="cursor">_</span></p>
-      <h1 id="hero-title">I break systems.<br><span>I document why.</span></h1>
-      <p class="hero__intro">Offensive security field notes, penetration testing methodology, and honest lessons from the other side of the shell.</p>
+      <div class="eyebrow"><span class="status-dot"></span> OFFENSIVE SECURITY JOURNAL <span class="eyebrow__line"></span> 2026</div>
+      <p class="hero__prompt">Researcher · Builder · OSCP+</p>
+      <h1 id="hero-title">Breaking systems.<br><span>Sharing the craft.</span></h1>
+      <p class="hero__intro">A field journal on offensive security, penetration testing, and the lessons that only appear when theory meets a real target.</p>
       <div class="hero__actions">
-        <a class="button button--primary" href="{{ "posts/" | relURL }}"><span>./explore_writeups</span><b aria-hidden="true">↗</b></a>
-        <a class="button button--ghost" href="{{ "about/" | relURL }}">cat about.md</a>
+        <a class="button button--primary" href="{{ "posts/" | relURL }}"><span>Explore the journal</span><b aria-hidden="true">↗</b></a>
+        <a class="button button--ghost" href="{{ "about/" | relURL }}">About me</a>
       </div>
     </div>
-    <div class="terminal reveal" aria-label="Terminal profile summary">
-      <div class="terminal__bar"><div><i></i><i></i><i></i></div><span>~/profile — zsh</span><span>⌁</span></div>
-      <div class="terminal__body">
-        <p><em>❯</em> nmap -sV aibel.local</p>
-        <p class="muted">Starting Nmap 7.94...</p>
-        <div class="terminal__rule"></div>
-        <p><strong>PORT&nbsp;&nbsp;&nbsp;&nbsp;STATE&nbsp;&nbsp;SERVICE</strong></p>
-        <p><b>22/tcp</b>&nbsp;&nbsp; open&nbsp;&nbsp; <span>curiosity</span></p>
-        <p><b>80/tcp</b>&nbsp;&nbsp; open&nbsp;&nbsp; <span>research</span></p>
-        <p><b>443/tcp</b>&nbsp; open&nbsp;&nbsp; <span>offsec</span></p>
-        <div class="terminal__rule"></div>
-        <p class="muted">3 services exposed. No fear detected.</p>
-        <p><em>❯</em> <span class="cursor">█</span></p>
+    <div class="profile-card reveal" aria-label="Profile summary">
+      <div class="profile-card__top"><span>FIELD NOTES / 001</span><span class="profile-card__mark">A</span></div>
+      <div class="profile-card__orb"><span>AK</span></div>
+      <div class="profile-card__body">
+        <p class="profile-card__label">CURRENT FOCUS</p>
+        <h2>Finding the story<br>inside the exploit.</h2>
+        <div class="profile-card__meta"><span>Based in India</span><span>UTC +05:30</span></div>
       </div>
     </div>
   </section>
 
   <section class="dispatches reveal" aria-labelledby="dispatch-title">
     <div class="section-heading">
-      <div><p class="kicker">// LATEST INTELLIGENCE</p><h2 id="dispatch-title">Recent dispatches</h2></div>
-      <a href="{{ "posts/" | relURL }}">VIEW ALL <span>→</span></a>
+      <div><p class="kicker">LATEST WRITING</p><h2 id="dispatch-title">From the journal</h2></div>
+      <a href="{{ "posts/" | relURL }}">ALL STORIES <span>→</span></a>
     </div>
     <div class="post-grid">
       {{ range first 3 (where .Site.RegularPages "Section" "posts") }}
@@ -49,9 +43,9 @@
   </section>
 
   <section class="manifesto reveal">
-    <p class="kicker">// OPERATING PRINCIPLES</p>
-    <blockquote>“Enumeration is not a phase.<br>It is a <span>mindset.</span>”</blockquote>
-    <div class="manifesto__stats"><div><b>OSCP+</b><span>CERTIFIED</span></div><div><b>∞</b><span>ATTACK SURFACE</span></div><div><b>24/7</b><span>LEARNING MODE</span></div></div>
+    <p class="kicker">A NOTE TO SELF</p>
+    <blockquote>“Enumeration is not a phase.<br>It is a <span>way of seeing.</span>”</blockquote>
+    <div class="manifesto__stats"><div><b>OSCP+</b><span>CERTIFIED</span></div><div><b>04</b><span>FIELD NOTES</span></div><div><b>Always</b><span>LEARNING</span></div></div>
   </section>
 </main>
 {{ end }}

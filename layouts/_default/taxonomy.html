@@ -2,10 +2,10 @@
 <div class="content taxonomy-shell">
   <main>
     <header class="term-hero reveal">
-      <a class="term-back" href="{{ "tags/" | relURL }}">← cd ../tags</a>
-      <p class="kicker">// FILTERED INTELLIGENCE</p>
+      <a class="term-back" href="{{ "tags/" | relURL }}">← Back to all subjects</a>
+      <p class="kicker">CURATED FIELD NOTES</p>
       <h1>{{ .Title }}</h1>
-      <p>{{ len .Pages }} {{ if eq (len .Pages) 1 }}dispatch{{ else }}dispatches{{ end }} matched this signal.</p>
+      <p>{{ len .Pages }} {{ if eq (len .Pages) 1 }}story{{ else }}stories{{ end }} filed under this subject.</p>
     </header>
     <section class="term-results reveal" aria-label="Posts tagged {{ .Title }}">
       {{ range $index, $page := .Pages.ByDate.Reverse }}

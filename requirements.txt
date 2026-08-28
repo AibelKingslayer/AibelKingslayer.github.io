@@ -1,0 +1,1 @@
+# Build dependency is the Pandoc executable (v2.9+); no Python packages required.

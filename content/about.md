@@ -4,18 +4,26 @@ date: 2025-08-12
 author: "Aibel"
 url: "/about/"
 showTableOfContents: false
-summary: "About Aibel — cybersecurity professional, OSCP certified, penetration tester."
+summary: "About Aibel — cybersecurity enthusiast, learner, and security researcher."
 ---
 
 # whoami
 
-I'm Aibel, a cybersecurity professional deeply focused on offensive security. During the day, I break things legally, and at night, I learn how to do it even better. My passion for cybersecurity isn't just tied to my job; it's an obsession. I often find myself reading CVE disclosures at midnight and setting up vulnerable VMs on Saturday mornings for fun. I believe in learning by doing: the terminal is my classroom, and every machine I compromise teaches me something new.
+I'm Aibel, a cybersecurity enthusiast exploring offensive security, defensive techniques, networking, and the deeper workings of systems.
+
+I use this blog to document what I learn, break down interesting security concepts, share CTF write-up experiences, and keep notes on my journey in cybersecurity.
+
+Always learning. Always experimenting. Always curious..
 
 ---
 
 ## What I Do
 
-I specialize in penetration testing and offensive security. My main focus is on network exploitation, Active Directory attacks, privilege escalation, and web application testing. Whether I'm chaining vulnerabilities to achieve full domain compromise or hunting for that one misconfiguration that opens up a system, I thrive in these situations. On top of the technical aspects, I really value documentation and clear reporting. A vulnerability that no one understands cannot be fixed.
+I focus on penetration testing and offensive security, with a particular expertise in network exploitation, Active Directory, privilege escalation, and web applications.
+
+The thing I enjoy most is working out how small weaknesses can link a faulty permission in one place and a misconfiguration somewhere else and discovering how far such weaknesses can be exploited.
+
+I place great importance on recording what I come across. While exploiting a vulnerability is only half the task, it is just as important to be able to explain it clearly so that someone can understand the impact and fix it.
 
 ---
 
@@ -47,4 +55,4 @@ This is where I document my journey — writeups, techniques I've learned, tools
 
 I'm always open to talking security, comparing notes, or collaborating on research. You can find me on [LinkedIn](https://linkedin.com/in/aibel-aju) or [GitHub](https://github.com/AibelKingslayer).
 
-> *"Try harder."* — and mean it.
+> *"Try harder."* — and I mean it.

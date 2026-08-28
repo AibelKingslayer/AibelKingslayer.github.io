@@ -1,4 +1,4 @@
-name: Deploy Hugo site to GitHub Pages
+name: Deploy static site to GitHub Pages
 
 on:
   push:
@@ -20,18 +20,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          submodules: recursive
-          fetch-depth: 0
+      - name: Install Pandoc
+        run: sudo apt-get update && sudo apt-get install -y pandoc
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
-        with:
-          hugo-version: "0.163.3"
-          extended: true
-
-      - name: Build site (Hugo)
-        run: hugo --minify --gc
+      - name: Build framework-free site
+        run: python3 build.py
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
